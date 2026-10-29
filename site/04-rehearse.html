@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rehearsing Without Over-Rehearsing — Presenting, Calm</title>
+<meta name="description" content="A gentle, beginner-friendly manual for people who dread presenting: rehearsing without over-rehearsing, step by step.">
+<style>
+:root {
+  --paper: #fbf7f0;
+  --ink: #2c2722;
+  --soft: #f2ead9;
+  --line: #e3d8c4;
+  --accent: #9a5b3c;
+  --link: #7c4830;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  font-size: 1.06rem; line-height: 1.62; }
+header.site { max-width: 60rem; margin: 0 auto; padding: 1.6rem 1.2rem 0.9rem; border-bottom: 2px solid var(--line); }
+header.site a { text-decoration: none; color: inherit; }
+header.site .book { font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent); font-family: Verdana, Geneva, sans-serif; }
+header.site h1 { margin: 0.2rem 0 0.8rem; font-size: 1.7rem; line-height: 1.2; }
+nav.pages { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; font-size: 0.88rem;
+  font-family: Verdana, Geneva, sans-serif; }
+nav.pages a { text-decoration: none; color: var(--link); padding: 0.12rem 0.45rem; border-radius: 999px; }
+nav.pages a[aria-current="page"] { background: var(--accent); color: #fff; }
+nav.pages a[aria-current="page"]:hover { background: var(--accent); }
+main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.2rem 3rem; }
+h1.doc { font-size: 1.85rem; line-height: 1.2; }
+h2 { margin-top: 2.2em; line-height: 1.25; }
+h3 { line-height: 1.3; }
+a { color: var(--link); }
+code { background: var(--soft); border: 1px solid var(--line); border-radius: 4px;
+  padding: 0.05em 0.35em; font-size: 0.92em; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+pre code { display: block; padding: 0.8em 1em; overflow-x: auto; }
+blockquote { margin: 1.4rem 0; padding: 0.7rem 1.1rem; background: var(--soft);
+  border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; font-style: italic; }
+table { border-collapse: collapse; width: 100%; margin: 1.2rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.5rem 0.7rem; text-align: left; vertical-align: top; }
+th { background: var(--soft); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+p.check { margin: 0.15rem 0; }
+p.check .box { color: var(--accent); }
+footer.site { max-width: 60rem; margin: 0 auto; padding: 1rem 1.2rem 2rem; font-size: 0.82rem;
+  color: #6f6250; border-top: 2px solid var(--line); }
+footer.site a { color: var(--accent); }
+.pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; font-size: 0.95rem; }
+.pager a { text-decoration: none; }
+.pager .arrow { color: var(--accent); }
+@media print {
+  header.site, footer.site, .pager { display: none; }
+  body { background: #fff; font-size: 12pt; }
+  a { color: inherit; text-decoration: none; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+  <a href="index.html">
+    <div class="book">From The Massive AI Manual &middot; Asdale Dynamics, LLC</div>
+    <h1>Presenting, Calm</h1>
+  </a>
+  <nav class="pages" aria-label="Chapters">
+    <a href="index.html">Start Here</a>
+    <a href="01-one-sitting-outline.html">1. One-Sitting Outline</a>
+    <a href="02-slides-that-support.html">2. Slides That Support</a>
+    <a href="03-speaker-notes.html">3. Speaker Notes</a>
+    <a href="04-rehearse.html" aria-current="page">4. Rehearsing</a>
+    <a href="05-questions.html">5. Questions</a>
+    <a href="06-freeze-ups.html">6. Freeze-Ups</a>
+    <a href="07-ai-sparring.html">7. AI Sparring Partner</a>
+    <a href="worksheet.html">Worksheet</a>
+    <a href="checklist.html">Day-Of Checklist</a>
+    <a href="glossary.html">Glossary</a>
+  </nav>
+</header>
+<main>
+<h1 id="rehearsing-without-over-rehearsing">Rehearsing Without Over-Rehearsing</h1>
+<p>There is a specific quiet-presenter doom loop: the talk goes badly in your head at
+2 a.m., so you rehearse again. The extra rehearsal makes it feel <em>less</em> solid, so
+you rehearse again. By rehearsal number twelve you have memorized sentence shapes
+rather than ideas, and if anyone interrupts you in real life mid-paragraph, your
+talk collapses inside you.</p>
+<p>The way out is not "don't rehearse." Rehearsal is genuinely useful. The way out is
+<strong>rehearsing the right three times, spaced out, with a specific job assigned to
+each one</strong> — and treating any rehearsal beyond that as optional joy, not duty.</p>
+<h2 id="the-three-pass-method">The three-pass method</h2>
+<table>
+<thead>
+<tr>
+<th>Pass</th>
+<th>When</th>
+<th>Job</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Structure pass</td>
+<td>4–6 days before</td>
+<td>Does the <em>route</em> make sense?</td>
+<td>15–20 min</td>
+</tr>
+<tr>
+<td>2. Full pass</td>
+<td>2–3 days before</td>
+<td>Slides, notes, timing</td>
+<td>full length</td>
+</tr>
+<tr>
+<td>3. Front-door pass</td>
+<td>1 day before (not the morning of)</td>
+<td>Hand-over-the-talker moves</td>
+<td>10–15 min</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pass-1-the-structure-pass">Pass 1 — the structure pass</h3>
+<p>Stand up (this matters: your body remembers a talk better on its feet), hold your
+notes page for the three moves only, and <strong>talk through the whole talk with no
+slides</strong>. Your only job is to notice where "hmm, that feels foggy." You are not
+fixing word choice. You are checking whether the route holds: does the open make
+sense, does each move actually lead to the next, does the ending <em>land</em>.</p>
+<p>When a section feels foggy, the fix is almost always the same: say the move-sentence
+out loud before the fog section: "So the second question is: why now?" Saying the
+signpost out loud clears fog for the whole room.</p>
+<h3 id="pass-2-the-full-pass">Pass 2 — the full pass</h3>
+<p>Full dress: slides advancing, notes in real position, time tracked with a real
+timer. Two extra jobs this pass:</p>
+<ol>
+<li><strong>Check timing against the real schedule.</strong> If your slot is 20 minutes and the
+   pass lands at 24, decide <em>now</em> what you cut that you'd cut in the room — and
+   mark that cut in your notes as [SKIP THIS if we're behind]. Do not decide the
+   cut in the room.</li>
+<li><strong>Record it.</strong> One take, audio alone is enough (a voice memo is easier to face
+   than video). Then do the following review, and only this review, once:
+   - Watch/listen for the <strong>first 3 minutes only</strong>, checking: did you say the
+     landing sentence topic up front? Do you <em>say what the talk is for</em> before
+     minute 2?
+   - Listen for the two places you went faster than the words needed. Mark those
+     spots in your notes with [SLOW DOWN].
+   - Stop reviewing. One listen is informative; three listens are corrosive.</li>
+</ol>
+<h4 id="the-recording-kindness">The recording kindness</h4>
+<p>You will hate your recorded voice. This is universal, true for professional
+presenters, and it means nothing about how you actually come across in the room.
+Set the
+recording aside after the two checks above. If you cannot bear to listen at all,
+record only the opening 3 minutes.</p>
+<h3 id="pass-3-the-front-door-pass">Pass 3 — the front-door pass</h3>
+<p>This pass has one job: <strong>the first 90 seconds.</strong> Because here is the physics of a
+talk: the most dangerous nerves arrive at the start while you are still finding
+your feet, so spending a rehearsal ONLY on the start means you will never trot
+through the mushy beginning in front of a real audience wearing the mushy beginning.</p>
+<p>Do it this way:</p>
+<ol>
+<li>Walk out of the room, come back in through a real door, and give your open
+   from standing position as if the room is full. Ten to fifteen minutes total.</li>
+<li>Include the <em>physical</em> open: where you put your hands, where you stand, when
+   you LOOK UP from the notes and say one sentence to actual humans' eyes.</li>
+<li>Include the moment you will hand over to question time and ask "so, what
+   questions come to mind? I'd rather take them live."</li>
+</ol>
+<p>The front-door pass is worth more than all the other rehearsals combined. Do it
+even if you do nothing else. (If you choose to give a chat AI your opening to
+react to, chapter 7 has the exact script for that.)</p>
+<h2 id="the-over-rehearsal-flags">The over-rehearsal flags</h2>
+<p>Watch yourself for these. If any is true, you are past useful rehearsal:</p>
+<ul>
+<li>You are now rehearsing <strong>word-for-word wording</strong> of anything beyond your open
+  and your landing sentence.</li>
+<li>You find yourself doing a <strong>sixth</strong> run of the same section and enjoying it
+  less each time. (The enjoyment going down is a real signal.)</li>
+<li>Your sleep is starting to keep a playlist of your mistakes at 2 a.m.</li>
+<li>You now know the talk so well you feel <strong>restlessness</strong> with it — an itchy
+  urge to change slides you were satisfied with two days ago. Itchiness is a
+  sign to stop touching it, not a sign that it is broken.</li>
+<li>You have started "rehearsing" answers to possible audience questions that
+  could go fifty different ways, each answer getting harder to remember than
+  the honest "great question, I don't know yet" you were going to try anyway.</li>
+</ul>
+<p>The rule that resolves all five: <strong>remember the route, not the road.</strong> In the
+room, you will walk a slightly different road than you rehearsed — different
+energy, different questions, a different mood in the audience. If you memorized
+the route (three moves, signpost sentences, landing sentence), the road changing
+is fine. If you memorized the road, the change is a catastrophe.</p>
+<h2 id="what-not-to-rehearse">What NOT to rehearse</h2>
+<ul>
+<li><strong>Do not rehearse the night before or the morning of.</strong> These rehearsals
+  damage more than they polish. Do the front-door pass one day before, then
+  stop.</li>
+<li><strong>Do not memorize transitions from slide to slide.</strong> This is where slips and
+  miscues happen; if you know the <em>idea</em> each slide starts with, your natural
+  speaking voice builds the bridge — because that's what your natural voice has
+  done in a hundred conversations.</li>
+<li><strong>Do not rehearse in a mirror.</strong> It makes you watch yourself instead of
+  practice being a person who is talking to people. The front-door pass with a
+  real door and a real wall is better.</li>
+<li><strong>Do not rehearse with a friend as a stand-in audience more than once.</strong> Their
+  kindness hides problems and their non-verbal reactions teach your body nothing
+  about a real room.</li>
+</ul>
+<h2 id="if-you-can-only-do-one-thing">If you can only do one thing</h2>
+<p>If the talk is tomorrow and you have done nothing: do the front-door pass.
+Ninety seconds, said out loud, from standing, through a door you actually walk
+in — and then go to bed preferring "rested and with a known route" over
+"gnawed and with a memorized road."</p>
+<h2 id="one-sentence-summary">One-sentence summary</h2>
+<p>Rehearse three times on purpose — route, full pass, front door — with a real
+recording once, and treat every additional pass as something that must pay rent
+or get out.</p>
+<div class="pager">
+  <div><a href="03-speaker-notes.html"><span class="arrow">&larr;</span> Previous: 3. Speaker Notes</a></div>
+  <div><a href="05-questions.html"><span class="arrow">&rarr;</span> Next: 5. Questions</a></div>
+</div>
+</main>
+<footer class="site">
+  <p><em>Presenting, Calm</em> — a gentle manual for people who dread presenting.
+  Plain English, step by step, never condescending. Built locally; no network
+  required. Pairs with the meeting-notes-summarizer tool for after-talk notes.</p>
+  <p>Copyright (c) 2026 Asdale Dynamics, LLC &middot; MIT License &middot;
+  part of <a href="https://dylanasdale.github.io">dylanasdale.github.io</a> &amp; The Massive AI Manual</p>
+</footer>
+</body>
+</html>

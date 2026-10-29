@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI as a Rehearsal Sparring Partner — Presenting, Calm</title>
+<meta name="description" content="A gentle, beginner-friendly manual for people who dread presenting: ai as a rehearsal sparring partner, step by step.">
+<style>
+:root {
+  --paper: #fbf7f0;
+  --ink: #2c2722;
+  --soft: #f2ead9;
+  --line: #e3d8c4;
+  --accent: #9a5b3c;
+  --link: #7c4830;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  font-size: 1.06rem; line-height: 1.62; }
+header.site { max-width: 60rem; margin: 0 auto; padding: 1.6rem 1.2rem 0.9rem; border-bottom: 2px solid var(--line); }
+header.site a { text-decoration: none; color: inherit; }
+header.site .book { font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent); font-family: Verdana, Geneva, sans-serif; }
+header.site h1 { margin: 0.2rem 0 0.8rem; font-size: 1.7rem; line-height: 1.2; }
+nav.pages { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; font-size: 0.88rem;
+  font-family: Verdana, Geneva, sans-serif; }
+nav.pages a { text-decoration: none; color: var(--link); padding: 0.12rem 0.45rem; border-radius: 999px; }
+nav.pages a[aria-current="page"] { background: var(--accent); color: #fff; }
+nav.pages a[aria-current="page"]:hover { background: var(--accent); }
+main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.2rem 3rem; }
+h1.doc { font-size: 1.85rem; line-height: 1.2; }
+h2 { margin-top: 2.2em; line-height: 1.25; }
+h3 { line-height: 1.3; }
+a { color: var(--link); }
+code { background: var(--soft); border: 1px solid var(--line); border-radius: 4px;
+  padding: 0.05em 0.35em; font-size: 0.92em; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+pre code { display: block; padding: 0.8em 1em; overflow-x: auto; }
+blockquote { margin: 1.4rem 0; padding: 0.7rem 1.1rem; background: var(--soft);
+  border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; font-style: italic; }
+table { border-collapse: collapse; width: 100%; margin: 1.2rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.5rem 0.7rem; text-align: left; vertical-align: top; }
+th { background: var(--soft); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+p.check { margin: 0.15rem 0; }
+p.check .box { color: var(--accent); }
+footer.site { max-width: 60rem; margin: 0 auto; padding: 1rem 1.2rem 2rem; font-size: 0.82rem;
+  color: #6f6250; border-top: 2px solid var(--line); }
+footer.site a { color: var(--accent); }
+.pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; font-size: 0.95rem; }
+.pager a { text-decoration: none; }
+.pager .arrow { color: var(--accent); }
+@media print {
+  header.site, footer.site, .pager { display: none; }
+  body { background: #fff; font-size: 12pt; }
+  a { color: inherit; text-decoration: none; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+  <a href="index.html">
+    <div class="book">From The Massive AI Manual &middot; Asdale Dynamics, LLC</div>
+    <h1>Presenting, Calm</h1>
+  </a>
+  <nav class="pages" aria-label="Chapters">
+    <a href="index.html">Start Here</a>
+    <a href="01-one-sitting-outline.html">1. One-Sitting Outline</a>
+    <a href="02-slides-that-support.html">2. Slides That Support</a>
+    <a href="03-speaker-notes.html">3. Speaker Notes</a>
+    <a href="04-rehearse.html">4. Rehearsing</a>
+    <a href="05-questions.html">5. Questions</a>
+    <a href="06-freeze-ups.html">6. Freeze-Ups</a>
+    <a href="07-ai-sparring.html" aria-current="page">7. AI Sparring Partner</a>
+    <a href="worksheet.html">Worksheet</a>
+    <a href="checklist.html">Day-Of Checklist</a>
+    <a href="glossary.html">Glossary</a>
+  </nav>
+</header>
+<main>
+<h1 id="ai-as-a-rehearsal-sparring-partner">AI as a Rehearsal Sparring Partner</h1>
+<p>One of the strangest, kindest gifts of this decade: you can now rehearse a talk
+against an audience that never gets bored, never rolls its eyes, never repeats
+anything it hears, and is available at 11 p.m. when the talk is at 9 a.m. and
+your stomach is doing gymnastics.</p>
+<p>This chapter shows you how to use an AI chat — a cloud one, or a fully local one
+running on your own machine — as a <strong>sparring partner</strong> for the specific jobs a
+rehearsal partner does: poking holes in structure, playing a tough audience,
+drilling you on questions, and checking your timing. It also covers what AI
+<em>can't</em> do, so the tool stays a tool.</p>
+<h2 id="why-ai-fits-this-job-when-a-human-doesnt">Why AI fits this job (when a human doesn't)</h2>
+<p>The problem with practicing on other humans is everything you already know:</p>
+<ul>
+<li><strong>Busy people</strong> give a real rehearsal the energy of "hurry up."</li>
+<li><strong>Kind people</strong> do not tell you the opening is foggy, and the fog survives to
+  the room.</li>
+<li><strong>Scary people</strong> (your boss' boss) make a rehearsal worse than no rehearsal.</li>
+<li><strong>Asking for a second session</strong> takes social energy that presenting itself
+  already taxed.</li>
+</ul>
+<p>An AI chat has none of those problems. It will answer follow-ups instantly,
+follow-up, it gives <em>specific</em> critique if you ask for specifics, and — the
+crucial trait for a nervous presenter — <strong>it doesn't remember asking you to
+look at its slides over lunch later.</strong></p>
+<p>Two healthy limits to hold throughout: (1) an AI has never stood in <em>your</em>
+room and it doesn't know your audience, so treat its outputs as drafts to
+test, not verdicts; and (2) facts stay yours — an AI can suggest structure
+<em>about</em> your numbers but can't be the source of them, and anything factual in
+your talk should trace back to a document or a person you can name.</p>
+<h2 id="setup-what-to-give-it-in-what-order">Setup: what to give it, in what order</h2>
+<p>The move that changes everything: <strong>don't just paste your slides and say "what
+do you think."</strong> You get vague replies to vague questions. Instead, work in
+this order — structure first, then words, then questions:</p>
+<ol>
+<li><strong>Give it the frame</strong>: who's in the room, what should change afterward, how
+   many minutes, how the talk will be delivered (live room / hybrid / video),
+   and what you're dreading most.</li>
+<li><strong>Give it the route</strong>: your landing sentence and your three move-sentences.
+   Ask for structure critique <em>before</em> you show any actual slide content, so
+   the critique is about the skeleton rather than about your typography.</li>
+<li><strong>Only then</strong> paste notes or slide text, one move at a time.</li>
+</ol>
+<p>You will get better results in 15 minutes of this order than in an hour of
+freeform "here is everything, is it good?"</p>
+<h2 id="technique-1-the-structure-critique-your-tell-a-friend-in-writing">Technique 1 — the structure critique (your "tell-a-friend," in writing)</h2>
+<p>Paste this prompt, filling the brackets (this and the other prompts below are
+copy-ready — paste them straight into any chat):</p>
+<pre><code>You're helping me prepare a short talk. Here is the context:
+
+- Audience: [who's in the room, what they already believe]
+- Desired change: [what they can do / decide differently after]
+- Length: [X minutes], [live room / hybrid / chat + slides]
+- I'm most worried about: [your honest note]
+
+My planned structure:
+
+- Landing sentence: [your one sentence]
+- Move 1: [one sentence with a verb]
+- Move 2: [one sentence]
+- Move 3: [one sentence]
+
+Please challenge this structure. In particular:
+1. Where will this be confusing to [audience]?
+2. Which move is doing work the audience won't understand yet at that point?
+3. What is the single best change I could make to the route?
+4. What question would you expect from a skeptic in this room?
+
+Answer as a list of concrete, specific issues, in the order I should fix
+them. Do not flatter me; a kind-but-blunt editorial note is welcome.
+</code></pre>
+<p>Then do something counter-intuitive: <strong>argue with it a little.</strong> Pick one piece
+of its critique and push: "I worry that drop would lose the setup for move 3 —
+what would you do instead?" The pushing is where the real thinking happens;
+the AI is warm-up weight resistance.</p>
+<h2 id="technique-2-the-tough-audience-it-plays-the-room">Technique 2 — the tough audience (it plays the room)</h2>
+<p>Once the route holds, have it <em>play</em> the room for practice:</p>
+<pre><code>Play my audience. You are three realistic people in the room I described:
+[skeptic in the back / newer employee who's just hoping it's not more
+paperwork / friendly senior person who asks the sharpest question].
+Starting with the skeptic, give me questions about my talk as I answer
+them. One question at a time. After each of my answers, rate it:
+(a) does it actually answer the question, (b) does it hedge into mush
+anywhere, (c) is there a shorter, more honest version? Then give the
+next question.
+</code></pre>
+<p>This is question-time rehearsal for chapter 5's table of question types. Let
+it pitch the fear question ("does this mean my job?") too — practicing the
+fear question is something humans almost never offer you. When you hit a
+question you can't answer: practice the three moves <em>out loud</em>, and practice
+"I don't know, I'll find out" with a named follow-through date for the
+follow-through.</p>
+<h2 id="technique-3-the-timing-checker">Technique 3 — the timing checker</h2>
+<p>Do a full-length spoken run at your desk against a timer, then compare notes:</p>
+<pre><code>Here's my rough timing in the run I just did (list it):
+
+- opening: [2:00]
+- move 1: [6:30]
+- move 2: [7:10]
+- move 3: [8:00]
+- summary: [1:30]
+- total: [25:10]  (slot is [20] minutes)
+
+If I need to cut about [5] minutes, where's the most likely place that
+cuts with the least damage? Ask me 2–3 follow-up questions about the
+moves before answering, so you know what's load-bearing.
+</code></pre>
+<p>The phrase "what's load-bearing" is doing real work here. Any good presenter
+will cut what's not load-bearing; the model's useful trick is asking you the
+questions that identify it.</p>
+<h2 id="technique-4-the-sparring-partner-for-your-speaker-notes">Technique 4 — the sparring partner for your speaker notes</h2>
+<p>Paste a single move's speaker notes and ask:</p>
+<pre><code>Here are speaker notes for one move of my talk (chunky bullets, in the
+order I say them). Two jobs:
+1. Say the move back to me in the natural voice an audience hears — not
+   a script to read, but the likely shape of what I'd actually say.
+2. Flag the bullets where someone like me would go off the rails under
+   adrenaline: no number, missing slide advance, story without a time
+   budget, missing [PAUSE].
+Then give me a 3-item checklist to improve these notes.
+</code></pre>
+<h2 id="the-local-fully-private-version">The local, fully-private version</h2>
+<p>If the talk content is sensitive — an HR matter, unreleased financials,
+something private — you can run the whole sparring loop on a model that
+<strong>lives on your own machine and talks to nothing.</strong> The manual for that is
+the <strong>local-ai-handbook</strong>; the short version:</p>
+<ul>
+<li>Install a local-model runner (Ollama or LM Studio are the common ones),
+  download a small open model, and run it completely offline.</li>
+<li>The same prompts above work; local models are a bit slower and wordier, so
+  ask for shorter answers ("answer in 6 bullets max").</li>
+<li>Zero data leaves your machine. For sensitive content, this is simply the
+  right choice — there is no small-print judgment call to make.</li>
+</ul>
+<h2 id="the-hard-limits-read-this-even-if-you-skip-the-rest">The hard limits (read this even if you skip the rest)</h2>
+<ul>
+<li><strong>It has never been in your room.</strong> Its "audience" is a bright abstraction.
+  The real room has a hum, a clock, three people checking email, and one
+  person who means well. Weigh its enthusiasm with a grain of salt: local
+  chat models in particular are trained to be encouraging and will tell you
+  "great structure!" if you ask weakly. Ask for <em>problems</em>, not praise.</li>
+<li><strong>It can be confidently wrong about facts.</strong> No number, date, name, or
+  claim goes in your talk because a chat suggested it. Every fact traces to
+  something you can name (a document, a report, a person) in the room.</li>
+<li><strong>It cannot measure your voice.</strong> Pacing, volume, where you trail off —
+  these come from your recording (chapter 4, pass 2), not from a text model.</li>
+<li><strong>It is not a memory of your organization.</strong> It doesn't know that Randy is
+  the one who talks during cost slides, or that the last presenter who tried
+  a similar plan was politely murdered in Q&amp;A. The humans you trust still
+  hold that map. Use them for a late-stage sanity pass.</li>
+</ul>
+<p>A good final rule: <strong>AI helps you think; a human feels the room.</strong> Use AI for
+rehearsal and structure; get one real human glance at the actual slides before
+you show them to anyone you need to impress.</p>
+<h2 id="one-sentence-summary">One-sentence summary</h2>
+<p>An AI chat is the rehearsal partner who is always home: use it to stress-test
+your route, play your toughest audience, time-check your cuts, and pressure
+round your notes — while the facts stay yours and the room stays human.</p>
+<div class="pager">
+  <div><a href="06-freeze-ups.html"><span class="arrow">&larr;</span> Previous: 6. Freeze-Ups</a></div>
+  <div><a href="worksheet.html"><span class="arrow">&rarr;</span> Next: Worksheet</a></div>
+</div>
+</main>
+<footer class="site">
+  <p><em>Presenting, Calm</em> — a gentle manual for people who dread presenting.
+  Plain English, step by step, never condescending. Built locally; no network
+  required. Pairs with the meeting-notes-summarizer tool for after-talk notes.</p>
+  <p>Copyright (c) 2026 Asdale Dynamics, LLC &middot; MIT License &middot;
+  part of <a href="https://dylanasdale.github.io">dylanasdale.github.io</a> &amp; The Massive AI Manual</p>
+</footer>
+</body>
+</html>

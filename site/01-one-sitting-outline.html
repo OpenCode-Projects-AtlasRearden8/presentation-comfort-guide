@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Structure a Talk in One Sitting — Presenting, Calm</title>
+<meta name="description" content="A gentle, beginner-friendly manual for people who dread presenting: structure a talk in one sitting, step by step.">
+<style>
+:root {
+  --paper: #fbf7f0;
+  --ink: #2c2722;
+  --soft: #f2ead9;
+  --line: #e3d8c4;
+  --accent: #9a5b3c;
+  --link: #7c4830;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  font-size: 1.06rem; line-height: 1.62; }
+header.site { max-width: 60rem; margin: 0 auto; padding: 1.6rem 1.2rem 0.9rem; border-bottom: 2px solid var(--line); }
+header.site a { text-decoration: none; color: inherit; }
+header.site .book { font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent); font-family: Verdana, Geneva, sans-serif; }
+header.site h1 { margin: 0.2rem 0 0.8rem; font-size: 1.7rem; line-height: 1.2; }
+nav.pages { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; font-size: 0.88rem;
+  font-family: Verdana, Geneva, sans-serif; }
+nav.pages a { text-decoration: none; color: var(--link); padding: 0.12rem 0.45rem; border-radius: 999px; }
+nav.pages a[aria-current="page"] { background: var(--accent); color: #fff; }
+nav.pages a[aria-current="page"]:hover { background: var(--accent); }
+main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.2rem 3rem; }
+h1.doc { font-size: 1.85rem; line-height: 1.2; }
+h2 { margin-top: 2.2em; line-height: 1.25; }
+h3 { line-height: 1.3; }
+a { color: var(--link); }
+code { background: var(--soft); border: 1px solid var(--line); border-radius: 4px;
+  padding: 0.05em 0.35em; font-size: 0.92em; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+pre code { display: block; padding: 0.8em 1em; overflow-x: auto; }
+blockquote { margin: 1.4rem 0; padding: 0.7rem 1.1rem; background: var(--soft);
+  border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; font-style: italic; }
+table { border-collapse: collapse; width: 100%; margin: 1.2rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.5rem 0.7rem; text-align: left; vertical-align: top; }
+th { background: var(--soft); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+p.check { margin: 0.15rem 0; }
+p.check .box { color: var(--accent); }
+footer.site { max-width: 60rem; margin: 0 auto; padding: 1rem 1.2rem 2rem; font-size: 0.82rem;
+  color: #6f6250; border-top: 2px solid var(--line); }
+footer.site a { color: var(--accent); }
+.pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; font-size: 0.95rem; }
+.pager a { text-decoration: none; }
+.pager .arrow { color: var(--accent); }
+@media print {
+  header.site, footer.site, .pager { display: none; }
+  body { background: #fff; font-size: 12pt; }
+  a { color: inherit; text-decoration: none; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+  <a href="index.html">
+    <div class="book">From The Massive AI Manual &middot; Asdale Dynamics, LLC</div>
+    <h1>Presenting, Calm</h1>
+  </a>
+  <nav class="pages" aria-label="Chapters">
+    <a href="index.html">Start Here</a>
+    <a href="01-one-sitting-outline.html" aria-current="page">1. One-Sitting Outline</a>
+    <a href="02-slides-that-support.html">2. Slides That Support</a>
+    <a href="03-speaker-notes.html">3. Speaker Notes</a>
+    <a href="04-rehearse.html">4. Rehearsing</a>
+    <a href="05-questions.html">5. Questions</a>
+    <a href="06-freeze-ups.html">6. Freeze-Ups</a>
+    <a href="07-ai-sparring.html">7. AI Sparring Partner</a>
+    <a href="worksheet.html">Worksheet</a>
+    <a href="checklist.html">Day-Of Checklist</a>
+    <a href="glossary.html">Glossary</a>
+  </nav>
+</header>
+<main>
+<h1 id="structure-a-talk-in-one-sitting">Structure a Talk in One Sitting</h1>
+<p>A talk becomes scary when it stays a fog: "somewhere in there is a thing I have to say
+and I have to remember all of it and it has to be good." Fog does not shrink by
+thinking harder. It shrinks when you make decisions. This chapter is a one-sitting
+method for making every decision a talk actually needs — in about ninety minutes —
+so the fog becomes a list.</p>
+<p>You will need: one hour and a half of relatively quiet, something to write on, and
+permission to produce a rough-shaped draft that is <em>allowed to be ordinary</em>. Ordinary
+is fine. Ordinary is what gets delivered.</p>
+<h2 id="before-the-sitting-know-what-the-talk-is-for">Before the sitting: know what the talk is <em>for</em></h2>
+<p>A talk has one job: <strong>move a group of specific people from not-knowing-something to
+acting-differently.</strong> Not "inform." Not "share." A real difference you can point at.
+That difference is what we will write on the worksheet, in one sentence, before
+anything else gets decided.</p>
+<p>If nobody has told you what the talk is for, ask. A single message to whoever invited
+you: "What do you want people to be able to do after my talk that they can't do
+now?" Their answer does more for your structure than any book of tips.</p>
+<h2 id="step-1-the-five-questions-15-minutes">Step 1 — The five questions (15 minutes)</h2>
+<p>Write answers to these five questions. One or two lines each. Consistency of spelling does not matter; slight messiness actually helps.</p>
+<ol>
+<li><strong>Who is in the room, and what do they already believe?</strong> Not their job titles —
+   their <em>understanding</em>. Do these people already agree with the change? Are six of
+   them going to think this talk is about them? Is there someone in the back who has
+   done this longer than you?</li>
+<li><strong>What should be different about them afterward?</strong> One specific change. If you
+   find yourself writing three, pick one; the other two are now examples inside the</li>
+<li><strong>What do they need to hear in order to believe it?</strong> This is your content. Not
+   everything you know — only the pieces that make the change credible. Everything
+   else in your head stays in your head with our blessing.</li>
+<li><strong>What can go wrong?</strong> The objection, the misunderstanding, the thing your boss'
+   boss will ask, the fear ("does this change mean my job?"). Write down the two or
+   three worst. These are not decorations; they are ammunition, and chapter 5 is
+   mostly about using it at question time.</li>
+<li><strong>What is the one sentence you want them to remember on the drive home?</strong> This
+   will become your <em>landing sentence</em>, and we will write it in step 4.</li>
+</ol>
+<h2 id="step-2-the-three-moves-30-minutes">Step 2 — The three moves (30 minutes)</h2>
+<p>Almost every good talk has three moving parts between its opening and its landing.
+This is not a superstition; it is a convenience. Three is short enough to remember
+and long enough to develop one idea. (Four is also fine. Five starts to blur.)</p>
+<p>Your talk, roughly:</p>
+<ul>
+<li><strong>A warm open</strong> (2–3 minutes): one true sentence that establishes why the topic
+   matters <em>to these people</em>, and what you will cover. Do not open with a joke you are
+   not sure of. Open with something honest that is already true.</li>
+<li><strong>Move 1, Move 2, Move 3</strong> (each 5–8 minutes): each move is one idea that brings
+   the audience one step closer to acting different. Write each move as one
+   sentence, then under it two or three <em>evidence pieces</em> — a story, a number, a
+   before-and-after, a real example, a demo beat.</li>
+<li><strong>A kind close</strong> (2–4 minutes): the landing sentence said plainly, plus one
+   direction for what they should do next, plus the genuine sentence: <em>thank you for
+   your attention; I take questions seriously.</em> Then you stop talking.</li>
+</ul>
+<p>Write your three moves as three sentences. Use a verb. "Move 1: show why the current
+process quietly costs more than we think." That verb fixes the slide that follows
+it, the notes that follow the slide, and the way you will rehearse.</p>
+<h2 id="step-3-the-route-15-minutes">Step 3 — The route (15 minutes)</h2>
+<p>Decide how the moves are arranged. Three honest options, in order of difficulty:</p>
+<ul>
+<li><strong>The staircase</strong>: move 1 is the least surprising, move 3 is the most surprising.
+  Easiest for you; audience can already predict it; very low risk, low spice.
+  Choose it when you are not sure, or when the room is already wary of change.</li>
+<li><strong>The trailhead</strong>: open with the story, then use moves as evidence, then land.
+  Middle difficulty, higher memorability, depends on you having one story you
+  genuinely know cold.</li>
+<li><strong>The problem-board</strong>: put the biggest objection in the <em>middle</em> where people are
+  most alert, and lead the room through it. Highest difficulty; do not choose it
+  while nervous; do not choose it when the audience does not already lean your way.</li>
+</ul>
+<p>There is no shame in the staircase. The staircase given calmly with real numbers
+beats a dramatic problem-board given at 92% effort and a shaking paper.</p>
+<h2 id="step-4-the-landing-sentence-10-minutes">Step 4 — The landing sentence (10 minutes)</h2>
+<p>Write <strong>one sentence</strong> that says what you want them to remember on the drive home.
+Read it out loud. Then do the three-bullet check:</p>
+<ul>
+<li>Does it mention the audience, not only the topic? (Not "our inventory system" but
+   "we stop entering the same number in two systems.")</li>
+<li>Could you say it in 8 seconds? A sentence that takes 20 seconds to say is three</li>
+<li>Does it include a direction (do this, watch this, decide this, ask this)?</li>
+</ul>
+<p>This is the sentence that goes at the <strong>bottom of your slides</strong>, at the end of your
+summary slide, on your final notes page, and (optionally, in smaller text) on your</p>
+<h2 id="step-5-the-tell-a-friend-test-10-minutes">Step 5 — The tell-a-friend test (10 minutes)</h2>
+<p>Now do the fastest structural audit that exists. Say this to a friend, a spouse, a
+coworker — or out loud to a wall; your cat is also a valid participant:</p>
+<ol>
+<li><strong>What is the talk about?</strong> They should be able to summarize your landing</li>
+<li><strong>Does it make sense?</strong> If somebody in your audience is going to hear it, they</li>
+<li><strong>What is the best reason <em>not</em> to believe it?</strong> If they cannot think of any,
+   return to question 4 above, and add what they say into your "what can go</li>
+<li><strong>How long would that take you to actually do?</strong> If the answer makes you
+   flinch, trim a move.</li>
+</ol>
+<p>A five-minute conversation with one person will catch structural problems that
+twenty passes over your slides would not. Doing this step on paper alone is fine
+and still better than nothing.</p>
+<h2 id="after-the-sitting">After the sitting</h2>
+<ul>
+<li><strong>Do not expand the deck tonight.</strong> Tonight, the slide count should be based on
+  the moves, not your ambition. If you have 3 moves, you can budget 6–9 content
+  slides, plus a title slide, an agenda slide covering what you'll cover, and a
+  summary slide with the landing sentence. Chapter 2 tells you how to make those.</li>
+<li><strong>Start the speaker notes now</strong> (chapter 3) while the material is still warm in
+  your head. Notes written during the sitting are twice as good as notes written
+  the week of.</li>
+<li><strong>Calendar the rehearsals</strong> from chapter 4 next to the talk day. Three rehearsals,
+  spaced.</li>
+</ul>
+<h2 id="the-word-count-sanity-table">The word count sanity table</h2>
+<p>Here's a rough sizing table so you do not over-build (add slides only when a move</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Small room (5–10)</th>
+<th>Mid room (10–30)</th>
+<th>Big room (30+)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minutes to fill</td>
+<td>10–20</td>
+<td>15–25</td>
+<td>20–45</td>
+</tr>
+<tr>
+<td>Content slides</td>
+<td>4–8</td>
+<td>6–12</td>
+<td>10–20</td>
+</tr>
+<tr>
+<td>Moves</td>
+<td>2–3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Rehearsals</td>
+<td>2–3</td>
+<td>3</td>
+<td>3, with one in the actual room</td>
+</tr>
+<tr>
+<td>Handout/question cards</td>
+<td>not needed</td>
+<td>nice-to-have</td>
+<td>worth doing</td>
+</tr>
+<tr>
+<td>Landing sentence restated</td>
+<td>end only</td>
+<td>open + end</td>
+<td>open, summary slide, end</td>
+</tr>
+</tbody>
+</table>
+<p>Numbers are guidance, not law. The point of this chapter is that you can <em>decide</em></p>
+<h2 id="the-90-minute-recap">The 90-minute recap</h2>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–15 min</td>
+<td>The five questions</td>
+</tr>
+<tr>
+<td>15–45 min</td>
+<td>Three moves, each with evidence</td>
+</tr>
+<tr>
+<td>45–60 min</td>
+<td>Route choice + landing sentence</td>
+</tr>
+<tr>
+<td>60–70 min</td>
+<td>tell-a-friend check (or wall version)</td>
+</tr>
+<tr>
+<td>70–90 min</td>
+<td>start speaker notes (chapter 3)</td>
+</tr>
+</tbody>
+</table>
+<p>One sitting, then it is finished until rehearsal. The talk is no longer hanging
+over you. It is a list with three arrows at the top.</p>
+<div class="pager">
+  <div><a href="index.html"><span class="arrow">&larr;</span> Previous: Start Here</a></div>
+  <div><a href="02-slides-that-support.html"><span class="arrow">&rarr;</span> Next: 2. Slides That Support</a></div>
+</div>
+</main>
+<footer class="site">
+  <p><em>Presenting, Calm</em> — a gentle manual for people who dread presenting.
+  Plain English, step by step, never condescending. Built locally; no network
+  required. Pairs with the meeting-notes-summarizer tool for after-talk notes.</p>
+  <p>Copyright (c) 2026 Asdale Dynamics, LLC &middot; MIT License &middot;
+  part of <a href="https://dylanasdale.github.io">dylanasdale.github.io</a> &amp; The Massive AI Manual</p>
+</footer>
+</body>
+</html>

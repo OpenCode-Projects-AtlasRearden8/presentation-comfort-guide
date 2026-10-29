@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slides That Support Instead of Show Off — Presenting, Calm</title>
+<meta name="description" content="A gentle, beginner-friendly manual for people who dread presenting: slides that support instead of show off, step by step.">
+<style>
+:root {
+  --paper: #fbf7f0;
+  --ink: #2c2722;
+  --soft: #f2ead9;
+  --line: #e3d8c4;
+  --accent: #9a5b3c;
+  --link: #7c4830;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  font-size: 1.06rem; line-height: 1.62; }
+header.site { max-width: 60rem; margin: 0 auto; padding: 1.6rem 1.2rem 0.9rem; border-bottom: 2px solid var(--line); }
+header.site a { text-decoration: none; color: inherit; }
+header.site .book { font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent); font-family: Verdana, Geneva, sans-serif; }
+header.site h1 { margin: 0.2rem 0 0.8rem; font-size: 1.7rem; line-height: 1.2; }
+nav.pages { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; font-size: 0.88rem;
+  font-family: Verdana, Geneva, sans-serif; }
+nav.pages a { text-decoration: none; color: var(--link); padding: 0.12rem 0.45rem; border-radius: 999px; }
+nav.pages a[aria-current="page"] { background: var(--accent); color: #fff; }
+nav.pages a[aria-current="page"]:hover { background: var(--accent); }
+main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.2rem 3rem; }
+h1.doc { font-size: 1.85rem; line-height: 1.2; }
+h2 { margin-top: 2.2em; line-height: 1.25; }
+h3 { line-height: 1.3; }
+a { color: var(--link); }
+code { background: var(--soft); border: 1px solid var(--line); border-radius: 4px;
+  padding: 0.05em 0.35em; font-size: 0.92em; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+pre code { display: block; padding: 0.8em 1em; overflow-x: auto; }
+blockquote { margin: 1.4rem 0; padding: 0.7rem 1.1rem; background: var(--soft);
+  border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; font-style: italic; }
+table { border-collapse: collapse; width: 100%; margin: 1.2rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.5rem 0.7rem; text-align: left; vertical-align: top; }
+th { background: var(--soft); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+p.check { margin: 0.15rem 0; }
+p.check .box { color: var(--accent); }
+footer.site { max-width: 60rem; margin: 0 auto; padding: 1rem 1.2rem 2rem; font-size: 0.82rem;
+  color: #6f6250; border-top: 2px solid var(--line); }
+footer.site a { color: var(--accent); }
+.pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; font-size: 0.95rem; }
+.pager a { text-decoration: none; }
+.pager .arrow { color: var(--accent); }
+@media print {
+  header.site, footer.site, .pager { display: none; }
+  body { background: #fff; font-size: 12pt; }
+  a { color: inherit; text-decoration: none; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+  <a href="index.html">
+    <div class="book">From The Massive AI Manual &middot; Asdale Dynamics, LLC</div>
+    <h1>Presenting, Calm</h1>
+  </a>
+  <nav class="pages" aria-label="Chapters">
+    <a href="index.html">Start Here</a>
+    <a href="01-one-sitting-outline.html">1. One-Sitting Outline</a>
+    <a href="02-slides-that-support.html" aria-current="page">2. Slides That Support</a>
+    <a href="03-speaker-notes.html">3. Speaker Notes</a>
+    <a href="04-rehearse.html">4. Rehearsing</a>
+    <a href="05-questions.html">5. Questions</a>
+    <a href="06-freeze-ups.html">6. Freeze-Ups</a>
+    <a href="07-ai-sparring.html">7. AI Sparring Partner</a>
+    <a href="worksheet.html">Worksheet</a>
+    <a href="checklist.html">Day-Of Checklist</a>
+    <a href="glossary.html">Glossary</a>
+  </nav>
+</header>
+<main>
+<h1 id="slides-that-support-instead-of-show-off">Slides That Support Instead of Show Off</h1>
+<p>Slides fail quiet presenters in two directions. Either they are empty (a wall of
+paragraphs reading <em>at</em> the audience while you read <em>at</em> the screen), or they are
+fancy (animations, clip-art fireworks, transitions that take longer than a sentence).
+Both failures come from the same mistake: treating slides as the main event instead
+of treating them as <strong>furniture</strong>.</p>
+<p>The fixing idea is one sentence: <strong>the slide's job is to help the audience follow
+you, not to help you show off.</strong> Everything in this chapter follows from that.</p>
+<h2 id="the-slide-ladder">The slide ladder</h2>
+<p>Every talk built from the one-sitting chapter needs a small, stable ladder of
+slides. The count is set by the <em>moves</em>, not by your ambition:</p>
+<ul>
+<li><strong>1 title slide</strong> — talk name, your name, the date, one line of "...for people who
+  ...". Nothing else.</li>
+<li><strong>1 agenda slide</strong> — your three moves, written as three short phrases. Not a
+  paragraph. Not the landing sentence. This also gives the audience (and you) a
+  promise-keeper: when you get lost later, everyone can see how far along you are.</li>
+<li><strong>One or two slides per move</strong> — the move's sentence goes in the slide title;
+  the evidence goes in the body. If a move needs more than two slides, that is a
+  hint the move is really two moves, and that is okay — renumber.</li>
+<li><strong>1 summary slide</strong> — the landing sentence, large and alone. Then your contact
+  info and the words "Questions welcome."</li>
+</ul>
+<p>For a 20-minute talk with three moves, the ladder is often <strong>six or seven slides
+total</strong>. If you have thirty-two, that is not more information; that is less clarity.</p>
+<h2 id="the-five-word-test">The five-word test</h2>
+<p>For every slide, do this: cover the body of the slide with your hand and read
+<strong>only the title</strong>. Ask:</p>
+<blockquote>
+<p>Could a person in the audience who was mid-daydreaming see just this title and
+still roughly know where we are?</p>
+</blockquote>
+<p>If the title is "Q3 Results" — no. They are lost until you speak. If the title is
+"Q3: the machine downtime is costing us about $40 per shift" — yes. They are saved
+even during the moment you are nervous and trailing off. <strong>Slide titles do the
+structural work.</strong> They are a safety net for everyone, including you.</p>
+<h2 id="one-idea-per-slide">One idea per slide</h2>
+<p>The single test for whether a slide is done: <strong>if you feel no urge to say
+"oh, and also—" while showing it, it is done.</strong> One idea per slide; every other
+idea is an example <em>inside</em> the slide's paragraph (a short one) or gets its own
+slide.</p>
+<p>The supporting test for body content:</p>
+<ul>
+<li><strong>Reads in 15 seconds or less.</strong> If it takes 40, the audience is reading while
+  you are talking, and neither of you wins.</li>
+<li><strong>Big enough from the back row.</strong> Body text at 24 point or larger; titles at
+  36 and up. If you must squeeze to fit everything, you have too much on it —
+  split.</li>
+<li><strong>Contrast you can trust.</strong> Dark text on a light background, or truly dark
+  backgrounds with light text (watch the projector: many "dark backgrounds" come
+  out grey in a bright room). Avoid colour-on-colour contrast that only works on
+  your laptop screen.</li>
+<li><strong>No moving parts.</strong> No builds, no animations, no "click to reveal." Every one of
+  those is a thing that can mis-tap, out of order, and now the slide and your words
+  disagree. People forgive a plain slide. They remember the one where the slide
+  went sideways.</li>
+</ul>
+<h2 id="what-to-do-with-data">What to do with data</h2>
+<p>Real numbers earn trust. A wall of raw numbers loses it. Three honest moves cover
+most talks:</p>
+<ol>
+<li><strong>One number, rests in the appendix.</strong> Say: "If you want the whole table, it's
+   on slide 14, and I can also just email it." Then show the one number that
+   matters, big, with its source underneath in small text.</li>
+<li><strong>Before / after.</strong> Two rows, two columns, one highlighted cell. Works for
+   almost everything.</li>
+<li><strong>Trend with a label.</strong> A simple line or bar with the takeaway <em>written on the
+   slide</em>, not left for the audience to reverse-engineer: "Sales are flat in the
+   north and down 20% since March in the south."</li>
+</ol>
+<p>If a chart needs a paragraph to explain, append the paragraph to the slide's body
+or split the chart. Do not stand at the front of the room narrating an axis label
+into a microphone.</p>
+<h2 id="templates-without-trying">Templates without trying</h2>
+<p>You do not need to design. Use one of these nearly-free routes:</p>
+<ul>
+<li><strong>Your organization's default template, if it exists and is clean.</strong> Corporate
+  templates exist so that you do not have to; using one also signals that your
+  talk is in the family.</li>
+<li><strong>Build a tiny reusable template once.</strong> One font choice (a common one like
+  Arial, Calibri, or Georgia), two text sizes, one accent colour, one slide layout
+  with title top-left. Save it as a template file. Now every future slide is a
+  fill-in, not a design decision. Design decisions are exactly what you are
+  trying to spend less of.</li>
+<li><strong>The no-design design.</strong> White background, dark gray text, one accent colour
+  used <em>only</em> on the landing slide and on numbers you want remembered.</li>
+</ul>
+<p>Fonts to avoid: anything decorative, anything where the letters are all the same
+width but different heights (you know the one), and 10-point anything.</p>
+<h2 id="when-no-slides-is-the-right-answer">When no slides is the right answer</h2>
+<p>Sometimes the calmest option in the room is <strong>no slides at all.</strong> Good candidates:</p>
+<ul>
+<li>A ten-minute update with three decisions and next steps — a printed one-pager
+  or a shared doc link is more useful than slides.</li>
+<li>A story-driven toast or memorial-style talk — no slide should be competing with
+  what you are saying.</li>
+<li>A small room of fewer than about eight people where a document the group can
+  look at together beats a wall-sized reproduction of the same.</li>
+</ul>
+<p>If you have already said something like "I'm going to keep the slides minimal —
+just a few signposts," nobody in the room will miss them. Observed fact: on many
+quiet-presenter feedback cards, people write <em>the best part was that she just
+talked to us like a person, with the deck supporting her</em>.</p>
+<h2 id="before-you-call-it-done-checklist">Before-you-call-it-done checklist</h2>
+<p>Before you call the deck done, walk it with this list. Two minutes per full deck.</p>
+<ul>
+<li>☐ Title slide has: talk name, your name, date, one-line purpose</li>
+<li>☐ Agenda slide lists your moves as phrases, not sentences</li>
+<li>☐ Every content slide title passes the five-word test</li>
+<li>☐ Every slide has one idea, readable in 15 seconds</li>
+<li>☐ No animations, no builds, no auto transitions</li>
+<li>☐ Numbers each show a source (small text is fine; wrong numbers are not)</li>
+<li>☐ Summary slide is only the landing sentence (plus "questions welcome")</li>
+<li>☐ Print-out fallback exists: PDF copy on two computers and a USB stick</li>
+<li>☐ Speaker-view test done with real audience-size text (chapter 3's setup)</li>
+</ul>
+<h2 id="if-you-inherited-someone-elses-bad-deck">If you inherited someone else's bad deck</h2>
+<p>This happens to quiet presenters a lot: someone hands you a 42-slide monster and
+says "mostly it's all there." Here is the fast, honest rescue:</p>
+<ol>
+<li>Delete everything with no <em>singular</em> decision or event behind it. (You will
+   usually delete 60%.)</li>
+<li>From the survivors, write the move-sentences as new slide titles.</li>
+<li>Anything that no longer has a home but you do not want to lose goes in the
+   appendix after the summary slide. Appendices are allowed to be long; they are
+   where things go so that they are not on stage.</li>
+</ol>
+<p>You are not required to use the slide monster you were
+handed. You are required to give a clear talk.</p>
+<h2 id="the-one-sentence-summary">The one-sentence summary</h2>
+<p>The slides are furniture: they hold the room steady while you are the one
+speaking. Make them plain, make them few, make the titles carry the route — and
+then go spend the rest of your energy on the part only you can do: being a person
+in the room, saying true things on purpose.</p>
+<div class="pager">
+  <div><a href="01-one-sitting-outline.html"><span class="arrow">&larr;</span> Previous: 1. One-Sitting Outline</a></div>
+  <div><a href="03-speaker-notes.html"><span class="arrow">&rarr;</span> Next: 3. Speaker Notes</a></div>
+</div>
+</main>
+<footer class="site">
+  <p><em>Presenting, Calm</em> — a gentle manual for people who dread presenting.
+  Plain English, step by step, never condescending. Built locally; no network
+  required. Pairs with the meeting-notes-summarizer tool for after-talk notes.</p>
+  <p>Copyright (c) 2026 Asdale Dynamics, LLC &middot; MIT License &middot;
+  part of <a href="https://dylanasdale.github.io">dylanasdale.github.io</a> &amp; The Massive AI Manual</p>
+</footer>
+</body>
+</html>
